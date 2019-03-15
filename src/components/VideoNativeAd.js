@@ -1,6 +1,6 @@
 // @flow
 
-'use strict'
+'use strict';
  
 import {
     NativeModules,

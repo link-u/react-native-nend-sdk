@@ -1,6 +1,6 @@
 // @flow
 
-'use strict'
+'use strict';
 
 import * as React from 'react';
 import type {ViewProps} from 'ViewPropTypes';
