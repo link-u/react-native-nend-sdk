@@ -8,7 +8,7 @@ export {NativeAd, NativeAdLoader} from 'src/components/NativeAd';
 import type AdExplicitly from 'src/components/NativeAd';
 export type AdExplicitly;
 export {default as UserFeature} from 'src/components/UserFeature';
-export {default as VideoAd} from 'src/components/VideoAd';
+export {RewardedVideoAd, InterstitialVideoAd} from 'src/components/VideoAd';
 import type RewardItem from 'src/components/VideoAd';
 export type RewardItem;
 export {VideoNativeAdLoader} from 'src/components/VideoNativeAd';
