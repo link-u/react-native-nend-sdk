@@ -14,6 +14,9 @@
 #### iOS
 
 Requires Cocoapods and iOS >= 9.0.
+
+If you get linking errors about swift libraries add `$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)` to your library search paths ( file explorer -> under Targets select your target -> select the Build Settings tab -> search for Library Search Paths and add `$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)` to the debug and release sections.). [Source.](https://stackoverflow.com/questions/52536380/why-linker-link-static-libraries-with-errors-ios)
+
 Add the following to your podfile (create it in your ios folder) and run pod install:
 
 ```ruby

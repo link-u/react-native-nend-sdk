@@ -15,8 +15,8 @@
   "author": "",
   "license": "COMMERCIAL",
   "peerDependencies": {
-    "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react": "16.x",
+    "react-native": "0.x"
   },
   "devDependencies": {
     "flow-bin": "^0.94.0",
