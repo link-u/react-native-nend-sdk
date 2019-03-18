@@ -33,12 +33,12 @@ class RCTNendMediaViewManager: RCTViewManager {
 }
 
 class RCTMediaView: RCTView {
-  var onPlaybackStarted: RCTBubblingEventBlock?
-  var onPlaybackStopped: RCTBubblingEventBlock?
-  var onPlaybackCompleted: RCTBubblingEventBlock?
-  var onPlaybackError: RCTBubblingEventBlock?
-  var onFullScreenOpened: RCTBubblingEventBlock?
-  var onFullScreenClosed: RCTBubblingEventBlock?
+  @objc var onPlaybackStarted: RCTBubblingEventBlock?
+  @objc var onPlaybackStopped: RCTBubblingEventBlock?
+  @objc var onPlaybackCompleted: RCTBubblingEventBlock?
+  @objc var onPlaybackError: RCTBubblingEventBlock?
+  @objc var onFullScreenOpened: RCTBubblingEventBlock?
+  @objc var onFullScreenClosed: RCTBubblingEventBlock?
   
   fileprivate var videoView: NADNativeVideoView!
   

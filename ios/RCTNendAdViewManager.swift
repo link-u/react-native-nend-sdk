@@ -49,13 +49,13 @@ class RCTNendAdViewManager: RCTViewManager {
 }
 
 class RCTNADView: RCTView {
-  var spotId: String?
-  var apiKey: String?
-  var adjustSize = false
-  var onAdLoaded: RCTBubblingEventBlock?
-  var onAdFailedToLoad: RCTBubblingEventBlock?
-  var onAdClicked: RCTBubblingEventBlock?
-  var onInformationClicked: RCTBubblingEventBlock?
+  @objc var spotId: String?
+  @objc var apiKey: String?
+  @objc var adjustSize = false
+  @objc var onAdLoaded: RCTBubblingEventBlock?
+  @objc var onAdFailedToLoad: RCTBubblingEventBlock?
+  @objc var onAdClicked: RCTBubblingEventBlock?
+  @objc var onInformationClicked: RCTBubblingEventBlock?
   
   fileprivate var adView: NADView?
   

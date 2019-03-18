@@ -9,7 +9,7 @@ import NendAd
 
 @objc(RCTNendNativeAd)
 class RCTNendNativeAd: NSObject, RCTBridgeModule {
-  var bridge: RCTBridge!
+  @objc var bridge: RCTBridge!
   private var clientCache = [String: NADNativeClient]()
   private var nativeAdCache = [Int: NADNative]()
   private let adExplicitlyList = ["PR", "Sponsored", "AD", "Promotion"]
