@@ -5,19 +5,29 @@
 
 `$ npm install react-native-react-native-nend-sdk --save`
 
-### Mostly automatic installation
+### Mostly automatic installation (android only)
 
 `$ react-native link react-native-react-native-nend-sdk`
 
 ### Manual installation
 
-
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-react-native-nend-sdk` and add `RNReactNativeNendSdk.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNReactNativeNendSdk.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+Requires Cocoapods and iOS >= 9.0.
+Add the following to your podfile (create it in your ios folder) and run pod install:
+
+```ruby
+...
+use_modular_headers!
+...
+target ... do
+...
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
+  pod 'React', path: '../node_modules/react-native'
+  pod 'react-native-nend-sdk', path: '../node_modules/react-native-nend-sdk'
+...
+end
+```
 
 #### Android
 
@@ -34,20 +44,10 @@
       compile project(':react-native-react-native-nend-sdk')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNReactNativeNendSdk.sln` in `node_modules/react-native-react-native-nend-sdk/windows/RNReactNativeNendSdk.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using React.Native.Nend.Sdk.RNReactNativeNendSdk;` to the usings at the top of the file
-  - Add `new RNReactNativeNendSdkPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
-import RNReactNativeNendSdk from 'react-native-react-native-nend-sdk';
+import ReactNativeNendSdk from 'react-native-react-native-nend-sdk';
 
 // TODO: What to do with the module?
-RNReactNativeNendSdk;
+
 ```
-  

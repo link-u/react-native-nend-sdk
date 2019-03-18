@@ -10,7 +10,9 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.license      = package['license']
   s.author       = package['author']
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
+
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   s.source       = { :git => "https://github.com/link-u/react-native-nend-sdk.git", :tag => "v#{s.version}" }
   s.source_files = 'ios/**/*.{h,m,swift}'
